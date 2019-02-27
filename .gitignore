@@ -1,0 +1,7 @@
+*~
+.*.swp
+.*.swo
+/core/build
+/extension/core/include
+/extension/core/lib
+/extension/core/core_config.json

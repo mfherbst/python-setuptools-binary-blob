@@ -1,0 +1,4 @@
+{
+    "version":   "@PROJECT_VERSION@",
+    "libraries": ["core"]
+}
