@@ -20,10 +20,7 @@ set_target_properties(core PROPERTIES
 )
 if(APPLE)
 	set_target_properties(core PROPERTIES
-		POSITION_INDEPENDENT_CODE ON
 		MACOSX_RPATH ON
-		LINKER_LANGUAGE "CXX"
-		VERSION "${PROJECT_VERSION}"
 		NO_SONAME OFF
 	)
 endif()
