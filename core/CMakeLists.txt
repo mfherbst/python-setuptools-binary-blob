@@ -18,6 +18,15 @@ set_target_properties(core PROPERTIES
 	VERSION "${PROJECT_VERSION}"
 	NO_SONAME ON
 )
+if(APPLE)
+	set_target_properties(core PROPERTIES
+		POSITION_INDEPENDENT_CODE ON
+		MACOSX_RPATH ON
+		LINKER_LANGUAGE "CXX"
+		VERSION "${PROJECT_VERSION}"
+		NO_SONAME OFF
+	)
+endif()
 
 install(TARGETS core
 	DESTINATION lib
